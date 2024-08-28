@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+/*******Nav Bar starts*******/
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    background-color: #d2887f;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5em;
+    font-size: 1em;
+    font-family: Corbel;
+}
+.menu a:hover {
+    background-color: #ffa99f;
+    color:  #694743;
+}
+/*******Nav Bar ends********/
+
+@font-face {
+    font-family: Blacksword;
+    src: url(Images/Blacksword.otf);
+}
+@font-face {
+    font-family: Corbel;
+    src: url(Images/corbeli.ttf);
+}
+
+/*********HOME PAGE (START)*********/
+.page1 {
+    background: url(Images/Fair_10ae244f-8d81-467d-9500-c379d71d97c4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    margin: 0;
+    padding: 25px;
+    width: auto;
+}
+.title {
+    text-align: center;
+    font-size: 3vw;
+    font-family: Blacksword;
+    color: #694743;
+    background: rgba(255, 255, 255, 0.5); 
+    border: 5px solid white;
+}
+.page2 {
+    margin: auto;
+    padding: 25px;
+    font-family: Corbel;
+    text-align: center;
+    /*background-color: rgba(0, 0, 0, 0.3); black*/
+    background: rgba(255, 255, 255, 0.5); /*white*/
+    border: 5px solid white;
+    color: #684130;
+}
+.welcome {
+    font-size: 4vw;
+    font-family: Blacksword;
+    margin: 0;
+    color: #3c4432;
+    opacity: 50%;
+}
+/*********HOME PAGE (ENDS)*********/
+
+/**********EVENTS PAGE (starts)**********/
+.event > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1em;
+}
+.event > ul > li {
+    border: 1px solid  #dc8864; 
+    border-radius: 8px;
+}
+.event > ul > li > figure {
+    max-height: 220px;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+}
+.event > ul > li > figure > img {
+    width: 100%;
+}
+.event > ul > li > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: #ffa99a;
+    opacity: .8;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.event > ul > li > figure > figcaption > h3 {
+    color: #684130;
+    padding: 6px;
+    font-size: 20px;
+    font-family: Corbel;
+    text-align: center;
+}
+/**********EVENTS PAGE (ends)***********/
+
+/*********DINING PAGE (start) ***********/
+ul, li {
+    list-style: none;
+}
+.dine a {
+    background-color: #62704f;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+}
+.dine a:hover {
+    background-color: #3c4432;
+}
+/* dine styles */
+.dine {
+    background-image: url(Images/Original-Swedish-Meatballs-Recipe-Kottbullar-from-Sweden.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    margin: 0;
+    padding: 10px;
+    width: auto;
+}
+.dine > ul {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1em;
+}
+.dine > ul > li {
+  border: 1px solid #E2E2E2;
+    border-radius: 8px;
+}
+.dine > ul > li > figure {
+    max-height: 220px;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+}
+.dine > ul > li > figure > img {
+  width: 100%;
+}
+.dine > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+.dine > ul > li > figure > figcaption > h3 {
+  color: white;
+    padding: 6px;
+    font-size: 20px;
+    font-family: Corbel;
+    text-align: center;
+}
+.dine > ul > li > a {
+    padding: 10px  14px;
+    margin: 10px;
+    font-family: Corbel;
+}
+/*********DINING PAGE (ends)**********/
+
+/**********CONTACT PAGE (starts)**********/
+* {
+    box-sizing: border-box;
+}
+#myForm {
+    width: 80%;
+}
+#formLables {
+    width: 28%;
+    text-align: right;
+    padding: 20px;
+    float: left;
+    line-height: 1.6em;
+    color: #000000;
+}
+#formComponents {
+    width: 22%;
+    padding: 20px;
+    line-height: 1.6em;
+    float: left;
+}
+.cont_page {
+    margin: auto;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid grey;
+    height: 610px;
+}
+.contact {
+    text-align: center;
+    font-size: 3vw;
+    font-family: Blacksword;
+    color: #694743;
+}
+.cont1 {
+    text-align: center;
+    font-family: Corbel;
+}
+.textfield, .mail, .call, .comment, .submit {
+    font-size: 1.5vw;
+    font-family: Corbel;
+}
+hr {
+    width: 80%;
+}
+/**********CONTACT PAGE (ends)***********/
+
+/*********MAP PAGE (starts)***********/
+.maps {
+    text-align: center;
+}
+/*********MAP PAGE (ends)************/
+
+/*********FOOTER (START)*********/
+footer p {
+    clear: both;
+    margin: 0;
+    padding: 20px;
+    background-color: #d2887f;
+    color: #ffffff;
+    font-family: Corbel;
+    text-align: center;
+}
+/*********FOOTER (ENDS)**********/
+
+/**********************************/
+/*                                                         */
+/*                 MEDIA QUERY               */
+/*                                                         */
+/**********************************/
+@media only screen and (max-width: 500px) {
+    nav {
+        grid-template-columns: none;
+    }
+    .title { 
+        font-size: 6vh;
+    }
+    .welcome {
+        font-size: 5vh;
+    }
+    .event > ul {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .dine > ul {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .contact {
+        font-size: 5vh;
+    }
+    .textfield, .mail, .call, .comment, .submit {
+        font-size: 4vw;
+    }
+}
